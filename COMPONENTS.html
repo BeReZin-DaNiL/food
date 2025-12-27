@@ -1,0 +1,195 @@
+<!-- 
+  FoodDelivery - Компоненты и примеры использования
+  Используйте эти примеры для создания новых страниц
+-->
+
+<!-- 
+  1. КОНТЕЙНЕР СТРАНИЦЫ
+  Используйте для всех основных контентов
+-->
+<div class="container">
+    <h1>Название страницы</h1>
+    <!-- ваш контент -->
+</div>
+
+<!-- 
+  2. КНОПКИ
+  Используйте классы: btn btn-login или btn btn-register
+-->
+<button class="btn btn-login">Кнопка входа</button>
+<button class="btn btn-register">Кнопка регистрации</button>
+
+<!-- 
+  3. ФОРМА И ИНПУТЫ
+  Используйте структуру form-group для полей
+-->
+<form>
+    <div class="form-group">
+        <label for="field-name">Название поля</label>
+        <input type="text" id="field-name" placeholder="Введите значение">
+    </div>
+    <button type="submit" class="btn btn-register" style="width: 100%;">Отправить</button>
+</form>
+
+<!-- 
+  4. СООБЩЕНИЯ ОШИБОК И УСПЕХА
+-->
+<div class="error-message">Сообщение об ошибке</div>
+<div class="success-message">Сообщение об успехе</div>
+
+<!-- 
+  5. КАРТОЧКА С ИНФОРМАЦИЕЙ
+  Используйте для отображения информации
+-->
+<div style="padding: 30px; background: rgba(255,107,53,0.05); border-radius: 16px; border-left: 4px solid #FF6B35;">
+    <h3 style="color: #FF6B35; margin-bottom: 10px;">Название</h3>
+    <p>Описание информации</p>
+</div>
+
+<!-- 
+  6. СЕКЦИЯ ГРАДИЕНТА
+  Используйте для выделения важных блоков
+-->
+<div style="background: linear-gradient(135deg, #004E89 0%, #003a6b 100%); color: white; padding: 50px; border-radius: 16px; text-align: center;">
+    <h2 style="font-family: 'Poppins', sans-serif; margin-bottom: 20px;">Название секции</h2>
+    <p>Описание</p>
+</div>
+
+<!-- 
+  7. СЕТКА (GRID) ДЛЯ КАРТОЧЕК
+-->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px;">
+    <div style="padding: 30px; background: rgba(255,107,53,0.05); border-radius: 16px;">
+        <h3>Карточка 1</h3>
+        <p>Описание</p>
+    </div>
+    <div style="padding: 30px; background: rgba(0,78,137,0.05); border-radius: 16px;">
+        <h3>Карточка 2</h3>
+        <p>Описание</p>
+    </div>
+</div>
+
+<!-- 
+  8. СЛАЙДЕР/КАРУСЕЛЬ
+  Используйте для галереи изображений
+-->
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="images/img1.svg" alt="Товар 1">
+        </div>
+        <div class="slide">
+            <img src="images/img2.svg" alt="Товар 2">
+        </div>
+    </div>
+    <button class="slider-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="slider-btn next" onclick="moveSlide(1)">❯</button>
+</div>
+<script src="script.js"></script>
+
+<!-- 
+  9. НАВИГАЦИОННЫЕ ССЫЛКИ
+  Используйте в header.php
+-->
+<a href="page.php" style="color: white; text-decoration: none;">Ссылка</a>
+
+<!-- 
+  10. КОНТАКТЫ И СОЦИАЛЬНЫЕ СЕТИ
+-->
+<div style="background: rgba(76,175,80,0.05); padding: 20px; border-radius: 12px; border-left: 4px solid #4CAF50;">
+    <h3 style="color: #4CAF50; margin-bottom: 15px;">Социальные сети</h3>
+    <div style="display: flex; gap: 15px;">
+        <a href="https://vk.com/" target="_blank" style="display: inline-block; width: 45px; height: 45px; background: #4CAF50; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold;">VK</a>
+        <a href="https://t.me/" target="_blank" style="display: inline-block; width: 45px; height: 45px; background: #0088cc; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold;">TG</a>
+    </div>
+</div>
+
+<!-- 
+  11. ЦВЕТА ДЛЯ ИСПОЛЬЗОВАНИЯ
+  Используйте переменные CSS
+-->
+--primary: #FF6B35        /* Основной оранжевый */
+--secondary: #004E89      /* Синий */
+--accent: #F7931E         /* Золотой оранжевый */
+--success: #4CAF50        /* Зеленый */
+--dark: #1a1a1a           /* Темный текст */
+--light: #f8f9fa          /* Светлый фон */
+
+<!-- 
+  12. АНИМИРОВАННАЯ КАРТОЧКА
+  С эффектом при наведении
+-->
+<div style="padding: 30px; background: linear-gradient(135deg, rgba(255,107,53,0.1) 0%, rgba(255,107,53,0.05) 100%); border-radius: 16px; border: 1px solid rgba(255,107,53,0.2); transition: all 0.3s ease; cursor: pointer;" class="feature-card">
+    <div style="font-size: 3rem; margin-bottom: 15px;">⚡</div>
+    <h3 style="color: #FF6B35; margin-bottom: 10px;">Название</h3>
+    <p>Описание преимущества</p>
+</div>
+
+<!-- 
+  13. ТЕКСТОВАЯ ОБЛАСТЬ
+-->
+<textarea placeholder="Введите сообщение..." style="width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 15px; resize: vertical; min-height: 120px; transition: all 0.3s ease;"></textarea>
+
+<!-- 
+  14. ЗАГОЛОВОК СТРАНИЦЫ С ГРАДИЕНТОМ
+-->
+<h1 style="font-size: 3rem; margin-bottom: 20px; background: linear-gradient(135deg, #004E89 0%, #FF6B35 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Название</h1>
+
+<!-- 
+  15. ИСПОЛЬЗОВАНИЕ ЭМОДЗИ ДЛЯ UX
+  Добавляет визуальный интерес
+-->
+<label for="phone">📱 Номер телефона</label>
+<label for="password">🔑 Пароль</label>
+<label for="email">✉️ Email</label>
+<label for="message">💬 Сообщение</label>
+
+<!-- 
+  CSS УТИЛИТЫ ДЛЯ ЧАСТОГО ИСПОЛЬЗОВАНИЯ
+-->
+
+/* Полная ширина кнопка */
+.btn {
+    width: 100%;
+}
+
+/* Центрированный текст */
+text-align: center;
+
+/* Отступ сверху/снизу */
+margin-top: 20px;
+margin-bottom: 20px;
+
+/* Отступ со всех сторон */
+padding: 20px;
+
+/* Округленные углы */
+border-radius: 16px;
+
+/* Тень */
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+/* Линейный градиент */
+background: linear-gradient(135deg, #004E89 0%, #FF6B35 100%);
+
+/* Горизонтальный гибкий контейнер */
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+
+/* Вертикальный гибкий контейнер */
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+/* Сетка */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+
+/* Плавный переход */
+transition: all 0.3s ease;
+
+/* При наведении поднятие */
+transform: translateY(-2px);
